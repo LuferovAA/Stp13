@@ -13,9 +13,12 @@ def multiply(a, b):
 def divide(a, b):
     """Деление"""
     if b == 0:
-        raise ValueError("Нет мистер фиш")
+        raise ValueError("Деление на ноль!")
     return a / b
 
-def power(a, b):
-    """Возведение в степень"""
-    return a ** b
+# НОВАЯ ФУНКЦИЯ - среднее арифметическое
+def average(numbers):
+    """Среднее арифметическое списка чисел"""
+    if not numbers:
+        raise ValueError("Список не может быть пустым")
+    return sum(numbers) / len(numbers)
