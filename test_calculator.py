@@ -7,6 +7,5 @@ def test_subtract():
     assert calculator.subtract(5, 2) == 3
 
 def test_average():
-    """Тест для новой функции"""
-    assert calculator.average([1, 2, 3, 4, 5]) == 3
-    assert calculator.average([10, 20]) == 15
+    """НАМЕРЕННО НЕПРАВИЛЬНЫЙ ТЕСТ"""
+    assert calculator.average([1, 2, 3]) == 10  # Должно быть 2, а не 10!
